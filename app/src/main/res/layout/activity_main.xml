@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_activity4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="iniciarAct4"
+        android:text="Actividad_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola mundo"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/input_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/input_text_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+    <Button
+        android:id="@+id/boton_Saludar"
+        android:layout_width="135dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:onClick="saludar"
+        android:text="@string/btn_text_saludar"
+        app:layout_constraintEnd_toStartOf="@+id/boton_Borrar"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Name" />
+
+    <Button
+        android:id="@+id/boton_Borrar"
+        android:layout_width="108dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/btn_text_borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Name" />
+
+    <Button
+        android:id="@+id/btn_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:onClick="iniciarAct2"
+        android:text="Actividad_2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_activity2_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_activity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="iniciarAct3"
+        android:text="Actividad_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity2_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_activity2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="180dp"
+        android:onClick="iniciarAct2"
+        android:text="Actividad_2.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_activity5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="iniciarAct5"
+        android:text="Actividad_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_Saludar"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <FrameLayout
+        android:layout_width="262dp"
+        android:layout_height="239dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity4">
+
+        <LinearLayout
+            android:layout_width="234dp"
+            android:layout_height="205dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rgUbicacion"
+                android:layout_width="180dp"
+                android:layout_height="184dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/ubicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicación" />
+
+                <RadioButton
+                    android:id="@+id/rbRural"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="Rural" />
+
+                <RadioButton
+                    android:id="@+id/rbUrbano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Urbano" />
+
+                <RadioButton
+                    android:id="@+id/rblimiteUrbano"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="LímiteUrbano" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_activity6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="iniciarAct6"
+        android:text="Actividad_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_activity4"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity5"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
