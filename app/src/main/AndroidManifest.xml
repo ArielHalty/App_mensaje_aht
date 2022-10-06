@@ -14,7 +14,14 @@
         android:theme="@style/Theme.App_mensaje_aht"
         tools:targetApi="31">
         <activity
-            android:name=".Sixth_Activity"
+            android:name=".spin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SixthActivity"
             android:exported="false" />
         <activity
             android:name=".FifthActivity"

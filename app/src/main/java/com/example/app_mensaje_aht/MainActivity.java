@@ -34,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                Toast.makeText(getApplicationContext(), " Seleccionada", Toast.LENGTH_SHORT).show();
                 rbUbicacion = findViewById(radioGroup.getCheckedRadioButtonId());
+                Toast.makeText(getApplicationContext(), " Seleccionada: "+ rbUbicacion.getText().toString(), Toast.LENGTH_SHORT).show();
+
                 Log.i("INFO",rbUbicacion.getText().toString());
 
             }
@@ -99,9 +100,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FifthActivity.class);
         startActivity(intent);
     }
-    public void iniciarAct6(View view){
-        Intent i = new Intent(this, SixthActivity.class);
-        startActivity(i);
+    public void iniciarAct6(View view) {
+        Intent intent = new Intent(this, SixthActivity.class);
+        startActivity(intent);
+    }
+    public void iniciarAct7(View view) {
+        Intent intent = new Intent(this, spin.class);
+        startActivity(intent);
     }
 
 
@@ -125,4 +130,6 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i("Info: ", "onDestroy");
     }
-}
+
+
+    }

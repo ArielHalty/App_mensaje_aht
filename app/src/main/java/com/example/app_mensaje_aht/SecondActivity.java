@@ -22,6 +22,7 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = getIntent();
         if (intent.getStringExtra("dato") != null) {
             tvDato.setText(intent.getStringExtra("dato"));
+            tvDato.setText(tvDato.getText().toString()+"\n"+intent.getStringExtra("dato2"));
 
             }
         }

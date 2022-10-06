@@ -21,10 +21,15 @@ public class SixthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sixth_activity);
 
+        button_incr = (Button) findViewById(R.id.button_incr);
+        button_decr = (Button) findViewById(R.id.button_decr);
+        progressBar = (ProgressBar) findViewById(R.id.progress_bar);
+        textView = (TextView) findViewById(R.id.text_view_progress);
+
         button_incr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (progress <= 90) {
+                if (progress < 100) {
                     progress += 10;
                     updateProgressBar();
 
@@ -34,7 +39,7 @@ public class SixthActivity extends AppCompatActivity {
         button_decr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (progress >= 90) {
+                if (progress > 0) {
                     progress -= 10;
                     updateProgressBar();
                 }

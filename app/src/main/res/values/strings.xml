@@ -2,6 +2,10 @@
     <string name="app_name">App_mensaje_aht</string>
     <string name="input_text_hint">Ingrese su nombre</string>
     <string name="btn_text_saludar">Saludar</string>
+    <string name="text_valor1">Ingrese un valor</string>
+    <string name="text_valor2">Ingrese un valor</string>
+    <string name="button">Calcular</string>
+    <string name="tv_resultado">Resultado</string>
     <string name="btn_text_borrar">Borrar</string>
 
 </resources>
